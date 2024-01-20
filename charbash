@@ -1,0 +1,2 @@
+if [[$1 == "stats"]] then
+  cat ./char_info/basic_stats   
