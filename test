@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the file exists
+if [ -f "input.txt" ]; then
+    # Read the number from the file
+    number=$(cat "input.txt")
+
+    # Check if the content of the file is a valid number
+    if [[ $number =~ ^[0-9]+$ ]]; then
+        # Add 5 to the number
+        result=$((number + 5))
+
+        # Print the result
+        echo "Original number: $number"
+        echo "Number after adding 5: $result"
+    else
+        echo "Error: The content of the file is not a valid number."
+    fi
+else
+    echo "Error: File 'input.txt' not found."
+fi
