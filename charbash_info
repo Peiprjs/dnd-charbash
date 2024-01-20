@@ -1,0 +1,5 @@
+Usage: ./charbash [arguments]
+
+- charbash stats: display the character's basic stats, such as modifiers, saving throws, class, level...
+- charbash hp: display the character's current health points or modify it
+  - charbash hp [number]: add or subtract the number specified to the health points counter
