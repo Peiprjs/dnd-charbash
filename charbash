@@ -17,7 +17,7 @@ if [[ $1 == "hp" ]]; then
     echo "New HP: $new_hp"
     echo $new_hp > char_info/hp
   fi
-  if [[ $1 == "hp" && $# == 3 ]]; then
+  if [[ $1 == "hp" && $1 == "set" && $# == 3 ]]; then
     new_hp=$3
     echo "New HP: $new_hp"
     echo $new_hp > char_info/hp
