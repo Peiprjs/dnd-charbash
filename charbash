@@ -3,11 +3,11 @@ if [ -z $1 ];
   fi
 
 if [[ $1 == "stats" ]]; then
-  cat ./char_info/basic_stats
+  cat char_info/basic_stats
   fi
 
 if [[ $1 == "hp" ]]; then
-  hp=$(cat "./char_info/hp")
+  hp=$(cat "char_info/hp")
   echo $hp
   if [[ $1 == "hp" && $# == 1 ]]; then
     echo "The player's HP is: $hp"
