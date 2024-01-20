@@ -15,6 +15,6 @@ if [[ $1 == "hp" ]]; then
     input=$2
     new_hp=$((hp+input))
     echo "New HP: $new_hp"
-    $new_hp > char_info/hp
+    echo $new_hp > char_info/hp
   fi
 fi
