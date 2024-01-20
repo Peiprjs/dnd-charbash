@@ -8,7 +8,7 @@ if [[ $1 == "h" ]]; then
   if [[ $# == 1 ]]; then
     echo "The player's HP is: $hp"
   fi
-  else; then
+  else
     echo "Adding $2 HP to player"
     input=$2
     new_hp=$((hp+input))
