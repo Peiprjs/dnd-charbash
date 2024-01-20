@@ -1,6 +1,7 @@
+if [ $1 == "stats" ];
+  then cat $0/char_info/basic_stats
+  fi
+
 if [ -z $1 ];
   then echo "You didn't enter any arguments."
-  fi
-if [ $1 == "stats" ];
-  then echo "You entered argument stats."
   fi
