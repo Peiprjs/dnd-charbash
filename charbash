@@ -1,7 +1,4 @@
-if [[$1 == "stats"]]
-then
-  cat ./char_info/basic_stats
-
-else
-  echo "need input"
-fi
+if [ -z $1];
+  then echo "You didn't enter any arguments." fi
+if [ $1 == "stats"];
+  then echo "You entered argument stats." fi
