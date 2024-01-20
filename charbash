@@ -1,7 +1,12 @@
-if [[ $1 == "stats" ]];
-  then cat ./char_info/basic_stats
+if [[ $1 == "stats" ]]; then
+  cat ./char_info/basic_stats
+  fi
+
+if [[ $1 == "h" ]]; then
+  hp=$(cat ./char_info/hp)
+  echo $hp
   fi
 
 if [ -z $1 ];
-  then echo "You didn't enter any arguments."
+  then cat ./charbash_info
   fi
