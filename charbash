@@ -1,6 +1,6 @@
-if [ -z $1];
+if [ -z $1 ];
   then echo "You didn't enter any arguments."
   fi
-if [ $1 == "stats"];
+if [ $1 == "stats" ];
   then echo "You entered argument stats."
   fi
