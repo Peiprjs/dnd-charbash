@@ -11,7 +11,7 @@ if [[ $1 == "hp" ]]; then
   if [[ $1 == "hp" && $# == 1 ]]; then
     echo "The player's HP is: $hp"
   fi
-  elif [[ $1 == "hp" && $# == 2 ]]; then
+  if [[ $1 == "hp" && $# == 2 ]]; then
     echo "Adding $2 HP to player"
     input=$2
     new_hp=$((hp+input))
