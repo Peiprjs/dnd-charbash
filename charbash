@@ -1,8 +1,12 @@
+if [ -z $1 ];
+  then cat ./charbash_info
+  fi
+
 if [[ $1 == "stats" ]]; then
   cat ./char_info/basic_stats
   fi
 
-if [[ $1 == "h" ]]; then
+if [[ $1 == "hp" ]]; then
   hp=$(cat "./char_info/hp")
   echo $hp
   if [[ $# == 1 ]]; then
@@ -13,8 +17,4 @@ if [[ $1 == "h" ]]; then
     input=$2
     new_hp=$((hp+input))
     echo "New HP: $new_hp"
-  fi
-
-if [ -z $1 ];
-  then cat ./charbash_info
   fi
