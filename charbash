@@ -3,11 +3,11 @@ if [[ $1 == "stats" ]]; then
   fi
 
 if [[ $1 == "h" ]]; then
-  hp=$(cat ./char_info/hp)
+  hp=$(cat "./char_info/hp")
   echo $hp
   if [[ $2 != "" ]]; then
     echo "Adding $2 HP to player"
-  fi 
+  fi
 fi
 
 if [ -z $1 ];
