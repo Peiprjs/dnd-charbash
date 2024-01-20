@@ -12,9 +12,9 @@ if [[ $1 == "hp" ]]; then
     echo "The player's HP is: $hp"
   fi
   if [[ $1 == "hp" && $# == 2 ]]; then
-    echo "Adding $2 HP to player"
     input=$2
     new_hp=$((hp+input))
     echo "New HP: $new_hp"
+    $new_hp > char_info/hp
   fi
 fi
