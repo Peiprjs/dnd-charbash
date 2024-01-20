@@ -5,6 +5,9 @@ if [[ $1 == "stats" ]]; then
 if [[ $1 == "h" ]]; then
   hp=$(cat ./char_info/hp)
   echo $hp
+  if [[ $2 != "" ]]; then
+    echo "Adding $2 HP to player"
+
   fi
 
 if [ -z $1 ];
