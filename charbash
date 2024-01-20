@@ -17,3 +17,4 @@ if [[ $1 == "hp" ]]; then
     new_hp=$((hp+input))
     echo "New HP: $new_hp"
   fi
+fi
